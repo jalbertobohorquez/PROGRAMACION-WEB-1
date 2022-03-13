@@ -5,7 +5,21 @@
     <title>Mi Primera Página</title>
 </head>
 <body>
-    <center><h1><span style="color:indigo">Mi primera página</span></h1>
+    <form>
+        <label>Buscar 1.0</label>
+        <input />
+    </form>
+    <form>
+        <label for="buscar2.0">Buscar 2.0</label>
+        <input id="buscar2.0" />
+    </form>
+    <form>
+        <label for="buscar3.0">Buscar 3.0</label>
+        <input id="buscar3.0"/>
+    </form>
+    <hr> 
+    <center>
+        <h1><span style="color:indigo">Mi primera página</span></h1>
         <br><br>
         <h2>Página Web de Shinoann</h2>
         <p>Que onda chavales, <span style = "color:blue">todo bien</span>, todo correcto 
@@ -21,7 +35,58 @@
     <hr>
     <!-- Este texto es para practicar con los comentarios-->
     <center>  
-        <a href="https://www.google.com">Ir a Google</a>
+        <a href="https://www.google.com">Ir a Google</a> <br>
+        <a target="_blanck" href="https://aulaweb.unicesar.edu.co/login/index.php">Ir a Aulaweb</a>
+    </center>
+    <hr>
+    <center>
+        <h2>Imágenes</h2>
+        <img src="https://i.pinimg.com/564x/82/10/6c/82106cf0964851925189312d2fc5cac7.jpg" />
+        <br>
+        <img src="Kocho_Shinobu.jpg" height="551" width="552" />
+        <br>
+        <img src="C:\Users\alber\OneDrive\Imágenes\Saved Pictures\kanao_ojos_lirio_de araña_escarlata.jpg" 
+            width="552"
+        />    
+        <br>      
+        <img src="Kimetsu Girls/Mitsuri_Kanroji.png" />
+    </center>
+    <center>
+        <hr>
+        
+        <label for="buscar3.0">Click aquí para busqueda 3.0</label>
+  
+        <hr>
+        <h2>Datos de Usuario</h2>
+        <br> 
+        <form action="/Formulario" method="POST">
+           <label for="correo">Usuario</label> 
+           <input value="papu@gmail.com" type="email" id="correo" name="correo" placeholder="Digite su correo electrónico"/>
+           <br><br>
+           <label for="contraseña">Contraseña</label>
+           <input value="papu" type="password" id="contraseña" name="password" placeholder="Digite su contraseña"/>
+           <br><br><br>
+           <label for="cedula">Cedula</label>
+           <input type="file" id="cedula" name="cedula"/>
+           <br><br>
+           <label for="comentarios">Comentarios</label> 
+           <br> 
+           <textarea cols="40" rows="5" id="comentarios" name="comentario" placeholder="Ingrese Comentario...">Gracias por comentar!</textarea>
+           <br>
+           <!--<input type="submit"/>-->
+           <button type="submit"> 
+               <img src="Iconos/sumbit.png" width="20"/> 
+               <br>Enviar
+            </button>
+           <button type="reset"> 
+               <img src="Iconos/reset.jpg" width="20"/>
+               <br>Reset
+            </button>
+           <button type="button"> 
+               <img src="Iconos/button.jpg" height="20" width="30"/>
+               <br>Boton
+            </button>
+        </form>
     </center>
     <hr>
 </body>
