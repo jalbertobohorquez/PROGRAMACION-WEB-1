@@ -3,8 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    
+    <script>
+        /**
+ * @param String name
+ * @return String
+ */
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+    </script>
+
+    <table>
+        <tr>
+            <td>Nombres</td>
+            <td>Apellidos</td>
+            <td>Direccion</td>
+            <td>Telefono</td>
+            <td>Usuario</td>
+        </tr>
+
+        <tr>
+            <td>
+                <script>document.write(getParameterByName('nombres'));</script>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <script>document.write(getParameterByName('apellidos'));</script>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <script>document.write(getParameterByName('direccion'));</script>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <script>document.write(getParameterByName('usuario'));</script>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <script>document.write(getParameterByName('contraseña'));</script>
+            </td>
+        </tr>
+        
+    </table>
+
 </body>
 </html>

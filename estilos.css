@@ -1,0 +1,11 @@
+*{
+    color: black(72, 129, 84);
+    font-family: sans-serif;
+}
+table{
+    border: 10 solid black;
+}
+td{
+    border: 10 solid black;
+    color:aliceblue red;
+}
