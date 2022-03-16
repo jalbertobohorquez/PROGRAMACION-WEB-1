@@ -1,5 +1,5 @@
 *{
-    color: rgb(72, 129, 84);
+    color: rgb(1, 5, 2);
     font-family: sans-serif;
 }
 table{
@@ -9,4 +9,29 @@ table{
 td{
     border: 1px solid black;
     color:aliceblue red;
+}
+label{
+    display: inline-block;
+    color: black;
+    width: 120px;
+}
+div{
+    text-align: center;
+    background-color: white;
+    margin: auto;
+}
+.container{
+    background-color: rgb(129, 138, 146);
+    width: fit-content;
+    border: 2px solid black;
+    padding: 10px 10px 10px;
+    border-radius: 20px;
+}
+h1{
+    text-align: center;
+    color: rgb(102, 16, 16);
+}
+h2{
+    text-align: center;
+    color: rgb(10, 57, 110);
 }
