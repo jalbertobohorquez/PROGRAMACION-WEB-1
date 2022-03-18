@@ -1,6 +1,9 @@
 *{
-    color: rgb(1, 5, 2);
+    color: rgb(42, 224, 87);
     font-family: sans-serif;
+}
+body{
+    background-color:rgb(33, 104, 151);
 }
 table{
     border: 1px solid black;
@@ -12,12 +15,12 @@ td{
 }
 label{
     display: inline-block;
-    color: black;
+    color: rgb(40, 40, 161);
     width: 120px;
 }
 div{
     text-align: center;
-    background-color: white;
+    background-color: rgb(33, 104, 151);
     margin: auto;
 }
 .container{
@@ -33,5 +36,5 @@ h1{
 }
 h2{
     text-align: center;
-    color: rgb(10, 57, 110);
+    color: rgb(9, 40, 97);
 }
