@@ -5,14 +5,29 @@
 body{
     background-color: rgb(16, 88, 55);
 }
-table{
+.tabla{
+    border: 1px solid black;
+    width: 800px;
+    border-collapse: collapse;
+    margin:auto;
+}
+
+.tabla th{
+    color: black;
+    background-color: blueviolet;
     border: 1px solid black;
 }
 
-td{
+.tabla td{
+    background-color: white;
     border: 1px solid black;
-    color:aliceblue red;
+    color:black;
 }
+
+.tabla td:hover{
+    background-color: aquamarine;
+}
+
 label{
     display: inline-block;
     color: rgb(40, 40, 161);

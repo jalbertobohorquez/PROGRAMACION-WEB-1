@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Tabla de Formulario de Practica</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
@@ -18,40 +18,52 @@ function getParameterByName(name) {
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
     </script>
-
-    <table>
-        <tr>
-            <td>Nombres</td>
-            <td>Apellidos</td>
-            <td>Direccion</td>
-            <td>Telefono</td>
-            <td>Usuario</td>
-            <td>Contraseña</td>
-        </tr>
-
-        <tr>
-            <td>
-                <script>document.write(getParameterByName('nombres'));</script>
-            </td>
-      
-            <td>
-                <script>document.write(getParameterByName('apellidos'));</script>
-            </td>
+    <div>
+        <h1>Tabla de Formulario de Practica</h1>
+        <p>En esta pagina se encuentra recopilada en una tabla la informacion enviada en el formulario 
+            de practica
+        </p>
+        <br><br>
        
-            <td>
-                <script>document.write(getParameterByName('direccion'));</script>
-            </td>
-        
-            <td>
-                <script>document.write(getParameterByName('telefono'));</script>
-            </td>
+        <table class="tabla">
+            <tr>
+                <th>No.</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Dirección</th>
+                <th>Telefono</th>
+                <th>Usuario</th>
+            </tr>
 
-            <td>
-                <script>document.write(getParameterByName('usuario'));</script>
-            </td>
-        </tr>
-        
-    </table>
+            <tr>
+                <td>
+                    1
+                </td>
 
+                <td>
+                    <script>document.write(getParameterByName('nombre'));</script>
+                </td>
+      
+                <td>
+                    <script>document.write(getParameterByName('apellido'));</script>
+                </td>
+       
+                <td>
+                    <script>document.write(getParameterByName('direccion'));</script>
+                </td>
+        
+                <td>
+                    <script>document.write(getParameterByName('telefono'));</script>
+                </td>
+
+                <td>
+                    <script>document.write(getParameterByName('usuario'));</script>
+                </td>
+            </tr>
+        
+        </table>
+
+    </div>
+    <br><br>
 </body>
 </html>
