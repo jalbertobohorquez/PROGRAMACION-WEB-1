@@ -33,6 +33,9 @@ label{
     color: rgb(40, 40, 161);
     width: 120px;
 }
+label:hover{
+    background-color: blueviolet;
+}
 div{
     text-align: center;
     background-color: rgb(16, 88, 55);
@@ -55,4 +58,12 @@ h2{
 }
 p{
     text-align: center;
+}
+.button{
+    background-color: rgb(116, 196, 169);
+}
+.button:hover{
+    background-color:aquamarine;
+    width: 120px;
+    transform: rotate(25deg);
 }
