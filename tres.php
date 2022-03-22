@@ -6,18 +6,6 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <script>
-        /**
- * @param String name
- * @return String
- */
-function getParameterByName(name) {
-    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-    results = regex.exec(location.search);
-    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-}
-    </script>
     <div>
         <h1>Tabla de Formulario de Práctica</h1>
         <hr>
@@ -29,15 +17,33 @@ function getParameterByName(name) {
         <table class="tabla">
             <tr>
                 <th>No.</th>
-                <th>Nombres</th>
-                <th>Apellidos</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
                 <th>Dirección</th>
                 <th>Telefono</th>
                 <th>Usuario</th>
             </tr>
 
             <tr>
-                
+                <!--Para imprimir-->
+                <td>
+                    1
+                </td>
+                <td><?php
+                    echo $_GET['nombre']
+                ?></td>
+                                <td><?php
+                    echo $_GET['apellido']
+                ?></td>
+                td><?php
+                    echo $_GET['direccion']
+                ?></td>
+                <td><?php
+                    echo $_GET['telefono']
+                ?></td>
+                <td><?php
+                    echo $_GET['Usuario']
+                ?></td>
             </tr>
         
         </table>
